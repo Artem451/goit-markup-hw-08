@@ -119,6 +119,10 @@ img {
   padding: 0;
 }
 
+.burger-menu:focus {
+  fill: var(--accent-color);
+}
+
 .burger-menu-icon {
   width: 40px;
   height: 40px;

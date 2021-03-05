@@ -33,6 +33,10 @@
     border: none;
     outline: none;
     padding: 0;
+    
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .burger-menu-icon {
