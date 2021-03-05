@@ -159,7 +159,7 @@ img {
   padding: 0;
 }
 
-.mobile-menu-close-button:focus, .mobile-menu-close-button:focus {
+.mobile-menu-close-button:focus {
   fill: var(--accent-color);
 }
 
