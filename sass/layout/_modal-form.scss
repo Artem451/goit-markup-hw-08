@@ -64,8 +64,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    @media screen and (min-width: 480px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .modal-form-input-wrap {
