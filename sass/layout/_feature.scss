@@ -1,0 +1,102 @@
+.feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & h2 {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    
+        font-family: var(--font-main);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--text-color);
+    }
+    
+    & p {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    
+        font-family: var(--font-main);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-color);
+    }
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-list-item {
+    max-width: 450px;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+
+.feature-list-sprite {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .feature-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .feature-list-item {
+        width: 354px;
+        &:nth-last-child(2n) {
+            margin-right: 30px;
+        }
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .feature {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
+
+    .feature-list{
+        align-items: stretch;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-list-item {
+        width: 270px;
+        &:not(:last-child){
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@media screen and (max-width: 1200px) {
+    .represent {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    .represent {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .rep-team {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+        
+        font-family: var(--font-main);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+    }
+
+    .rep-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rep-list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .rep-box {
+        position: relative;
+    }
+
+    .rep-description {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        bottom: 0;
+        padding-left: 82px;
+        padding-right: 82px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        
+        background: rgba(47, 48, 58, 0.8);
+        font-family: var(--font-main);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}

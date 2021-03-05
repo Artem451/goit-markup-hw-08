@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container inline-header">
+            <a class="logo-header" href="./index.html"><span>Web</span>Studio</a>
+
+            <nav class="header-navigation">    
+                <ul class="nav-menu"> 
+                    <li class="nav-menu-item"><a class="nav-link" href="./index.html">Студия</a></li>
+                    <li class="nav-menu-item"><a class="nav-link-active" href="./portfolio.html"><span class="active">Портфолио</span></a></li>
+                    <li class="nav-menu-item"><a class="nav-link" href="">Контакты</a></li>
+                </ul>
+            </nav>    
+            <ul class="header-contacts">    
+                <li class="header-contacts-item">  
+                    <a href="mailto:info@devstudio.com" class="header-mail-link">
+                        <svg class="header-icon" width="16" height="16">
+                            <use href="./img/sprite.svg#mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-contacts-item"> 
+                    <a href="tel:+380961111111" class="header-tel-link">
+                        <svg class="header-icon" width="16" height="16">
+                            <use  href="./img/sprite.svg#tel" ></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="burger-menu" data-menu-button>
+                <svg class="burger-menu-icon">
+                    <use href="./img/sprite.svg#burger-menu"></use>
+                </svg>
+            </button>  
+        </div>      
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-close-button" data-menu-close>
+                <svg class="mobile-menu-close-icon">
+                    <use href="./img/sprite.svg#close-burger-menu"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html">Студия</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mobile-menu-contacts">
+                <li class="mobile-menu-contacts-tel"><a class="mobile-menu-tel-link" href="">+38 096 111 11 11</a></li>
+                <li class="mobile-menu-contacts-mail"><a class="mobile-menu-mail-link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu-soc-list">
+                <li class="mobile-menu-soc-item"><a class="mobile-menu-soc-link" href="">Instagram <span class="soc-link-border"></span></a></li>
+                <li class="mobile-menu-soc-item"><a class="mobile-menu-soc-link" href="">Twitter <span class="soc-link-border"></span></a></li>
+                <li class="mobile-menu-soc-item"><a class="mobile-menu-soc-link" href="">Facebook <span class="soc-link-border"></span></a></li>
+                <li class="mobile-menu-soc-item"><a class="mobile-menu-soc-link" href="">Linkedin</a></li>
+            </ul>
+        </div>    
+    </header>
+
+
+    <main>
+        <section class="our-work">
+            <h1 class="visually-hidden">Примеры работ</h1>
+            <div class="container">
+                <ul class="filter-list">
+                    <li class="filter-list-item">       
+                        <button type="button" class="filter-button">Все</button> 
+                    </li>    
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Веб-сайты</button>
+                    </li>
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Приложения</button>
+                    </li>
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Дизайн</button>
+                    </li> 
+                    <li class="filter-list-item">
+                        <button type="button" class="filter-button">Маркетинг</button>
+                    </li>
+                </ul>     
+                <ul class="work-examples">
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/website1-desktop@1x.webp 1x, ./img/desktop/website1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/website1-desktop@1x.jpg 1x, ./img/desktop/website1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/website1-tablet@1x.webp 1x, ./img/tablet/website1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/website1-tablet@1x.jpg 1x, ./img/tablet/website1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/website1-mobile@1x.webp 1x, ./img/mobile/website1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/website1-mobile@1x.jpg 1x, ./img/mobile/website1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p1.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Технокряк</h2>
+                                <p class="portfolio-text">Веб-сайт</p>
+                            </div>     
+                        </a>   
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/design1-desktop@1x.webp 1x, ./img/desktop/design1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/design1-desktop@1x.jpg 1x, ./img/desktop/design1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/design1-tablet@1x.webp 1x, ./img/tablet/design1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/design1-tablet@1x.jpg 1x, ./img/tablet/design1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/design1-mobile@1x.webp 1x, ./img/mobile/design1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/design1-mobile@1x.jpg 1x, ./img/mobile/design1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p2.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>                                    
+                            <div class="work-examples-item-description">    
+                                <h2>Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/app1-desktop@1x.webp 1x, ./img/desktop/app1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/app1-desktop@1x.jpg 1x, ./img/desktop/app1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/app1-tablet@1x.webp 1x, ./img/tablet/app1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/app1-tablet@1x.jpg 1x, ./img/tablet/app1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/app1-mobile@1x.webp 1x, ./img/mobile/app1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/app1-mobile@1x.jpg 1x, ./img/mobile/app1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p3.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Ресторан Seafood</h2>
+                                <p class="portfolio-text">Приложение</p>
+                            </div>
+                        </a>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/marketing1-desktop@1x.webp 1x, ./img/desktop/marketing1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/marketing1-desktop@1x.jpg 1x, ./img/desktop/marketing1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/marketing1-tablet@1x.webp 1x, ./img/tablet/marketing1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/marketing1-tablet@1x.jpg 1x, ./img/tablet/marketing1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/marketing1-mobile@1x.webp 1x, ./img/mobile/marketing1-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/marketing1-mobile@1x.jpg 1x, ./img/mobile/marketing1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p4.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Проект Prime</h2>                 
+                                <p class="portfolio-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/app2-desktop@1x.webp 1x, ./img/desktop/app2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/app2-desktop@1x.jpg 1x, ./img/desktop/app2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/app2-tablet@1x.webp 1x, ./img/tablet/app2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/app2-tablet@1x.jpg 1x, ./img/tablet/app2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/app2-mobile@1x.webp 1x, ./img/mobile/app2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/app2-mobile@1x.jpg 1x, ./img/mobile/app2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p5.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Проект Boxes</h2>                  
+                                <p class="portfolio-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/website2-desktop@1x.webp 1x, ./img/desktop/website2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/website2-desktop@1x.jpg 1x, ./img/desktop/website2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/website2-tablet@1x.webp 1x, ./img/tablet/website2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/website2-tablet@1x.jpg 1x, ./img/tablet/website2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/website2-mobile@1x.webp 1x, ./img/mobile/website2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/website2-mobile@1x.jpg 1x, ./img/mobile/website2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p6.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Inspiration has no Borders</h2>
+                                <p class="portfolio-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/design2-desktop@1x.webp 1x, ./img/desktop/design2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/design2-desktop@1x.jpg 1x, ./img/desktop/design2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/design2-tablet@1x.webp 1x, ./img/tablet/design2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/design2-tablet@1x.jpg 1x, ./img/tablet/design2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/design2-mobile@1x.webp 1x, ./img/mobile/design2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/design2-mobile@1x.jpg 1x, ./img/mobile/design2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p7.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Издание Limited Edition</h2>
+                                <p class="portfolio-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/marketing2-desktop@1x.webp 1x, ./img/desktop/marketing2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/marketing2-desktop@1x.jpg 1x, ./img/desktop/marketing2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/marketing2-tablet@1x.webp 1x, ./img/tablet/marketing2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/marketing2-tablet@1x.jpg 1x, ./img/tablet/marketing2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/marketing2-mobile@1x.webp 1x, ./img/mobile/marketing2-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/marketing2-mobile@1x.jpg 1x, ./img/mobile/marketing2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p8.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Проект LAB</h2>               
+                                <p class="portfolio-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-examples-item">
+                        <a class="work-link" href="#">
+                            <div class="box">
+                                <picture>
+                                    <source srcset="./img/desktop/app3-desktop@1x.webp 1x, ./img/desktop/app3-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./img/desktop/app3-desktop@1x.jpg 1x, ./img/desktop/app3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./img/tablet/app3-tablet@1x.webp 1x, ./img/tablet/app3-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="./img/tablet/app3-tablet@1x.jpg 1x, ./img/tablet/app3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./img/mobile/app3-mobile@1x.webp 1x, ./img/mobile/app3-mobile@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                                    <source srcset="./img/mobile/app3-mobile@1x.jpg 1x, ./img/mobile/app3-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                    <img class="work-img" src="./img/p9.jpg" alt="Технокряк">
+                                </picture>
+                                <p class="overlay overlay-text"></p>
+                            </div>
+                            <div class="work-examples-item-description">    
+                                <h2>Growing Business</h2>              
+                                <p class="portfolio-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inline">
+            <div>
+                <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
+                <address class="address">г.Киев, пр-т Леси Украинки, 26</address>  
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a class="footer-contacts" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="footer-list-item"><a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="join-container">
+                <h2 class="join">Присоединяйтесь</h2>
+                <ul class="join-list">
+                    <li class="join-list-item">
+                        <a class="join-link" href="#">
+                            <svg class="join-link-icon" width="20" height="20">
+                                <use href="./img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-list-item">
+                        <a class="join-link" href="#">
+                            <svg class="join-link-icon" width="20" height="20">
+                                <use href="./img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-list-item">
+                        <a class="join-link" href="#">
+                            <svg class="join-link-icon" width="20" height="20">
+                                <use href="./img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-list-item">
+                        <a class="join-link" href="#">
+                            <svg class="join-link-icon" width="20" height="20">
+                                <use href="./img/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+            <div class="subscribe">
+                <p class="subscribe-text">Подпишитесь на рассылку</p>
+                <div class="subscribe-inline">
+                    <label>
+                        <input type="email" name="subscribe-mail" id="subscribe-mail" placeholder="E-mail" class="subscribe-mail">
+                    </label>          
+                    <button type="submit" class="subscribe-button">Подписаться
+                        <svg class="subscribe-icon" width="24" height="24">
+                            <use href="./img/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>        
+            </div>   
+        </div>
+    </footer>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

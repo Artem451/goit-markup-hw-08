@@ -1,0 +1,348 @@
+.header {
+    background-color: var(--background-color);
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logo-header {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color);
+
+    & span {
+        color: var(--accent-color);
+    }
+}
+
+.nav-menu {
+    display: none;
+}
+
+.header-contacts {
+    display: none;
+}
+
+.burger-menu {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.burger-menu-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+    max-width: 480px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+                0px 2px 4px rgba(0, 0, 0, 0.08), 
+                0px 1px 3px rgba(0, 0, 0, 0.16);            
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    
+
+    &:focus,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.mobile-menu-close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+.mobile-menu-nav {
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+}
+
+.mobile-menu-item {
+    &:not(:last-child) {
+        margin-bottom: 36px;
+    }
+    & :focus-within {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.mobile-menu-contacts {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu-contacts-tel {
+    margin-top: 302px;
+    margin-bottom: 32px;
+}
+
+.mobile-menu-contacts-mail {
+    margin-bottom: 64px;
+}
+
+.mobile-menu-tel-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+.mobile-menu-mail-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.mobile-menu-soc-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+
+.mobile-menu-soc-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+    
+    color: var(--accent-color);
+
+    & :not(last-child) {
+        margin-right: 10px;
+    }
+
+    & :not(first-child) {
+        margin-left: 10px;
+    }
+}
+
+.soc-link-border {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}
+
+@media (min-width: 768px){
+    .header {
+        padding: 0;
+    }
+
+    .logo-header {
+        margin-right: 88px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    } 
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        & a {
+            color: var(--text-color);
+        }
+        & :focus-within {
+            color: var(--accent-color);
+        }
+        
+        & .active {
+            color: var(--accent-color);
+        }
+    }
+
+    .header-contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: auto;
+        padding: 0;
+
+        & a {
+            color: var(--secondary-text-color);
+        }
+    }
+
+    .header-mail-link{
+        display: flex;
+        fill: #AFB1B8; 
+        padding: 0;
+        margin-bottom: 10px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+
+    .header-contacts-item {
+        & :focus-within {
+            color: var(--accent-color);
+            fill: currentColor;
+        }
+    }
+
+    .header-icon {
+        margin-right: 8px;
+    }
+    
+    .nav-link {
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link-active {
+        position: relative;
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            
+            background: #2196F3;
+            border-radius: 2px;
+        }
+    }
+
+    .nav-menu-item {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .logo-header {
+        display: inline-block;
+        margin-right: 93px;
+
+        font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192;
+
+        color: var(--text-color);
+
+        & span {
+            color: var(--accent-color);
+        }
+    }
+
+    .nav-menu {        
+        & :hover,
+        & :focus {
+            color: var(--accent-color);
+        }
+    }
+
+    .header-contacts{
+        flex-direction: row;
+    }
+
+    .header-icon {
+        margin-right: 10px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-mail-link{
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 25px;     
+    }
+    .header-tel-link {
+        display: flex;
+        fill: #AFB1B8;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-contacts-item {
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+        & :hover,
+        & :focus {
+            color: var(--accent-color);
+            fill: currentColor;
+        }
+    }
+}
+
+
+
